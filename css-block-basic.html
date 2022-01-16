@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-block-basic</title>
+
+</head>
+<body>
+
+    <style>
+      body {
+        margin: 0px;
+        min-width: 600px;
+      }
+    
+      div:first-of-type {
+        width: 600px;
+        margin: 20px;
+        padding: 0px calc(50% - 320px);
+        background-color: red;
+      }
+
+      div:nth-of-type(2) {
+        border: 2px solid;
+        margin-top: 16px;
+        width: 596px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section:nth-child(1) {
+        box-sizing: border-box;
+        height: 60px;
+        /* overflow-y: scroll; */
+        overflow: auto;
+        margin: 16px 10px;
+      }
+      
+      section:nth-child(2) {
+        background-color: pink;
+        height: 60px;
+        margin: 16px 10px;
+      }
+      
+      section:nth-child(2):hover {
+        background-color: pink;
+        height: 60px;
+        margin: 16px 0px;
+      /* margin-left: -10px;
+      margin-right: -10px;也可以先设置body的margin，再写负的margian */
+      }
+
+      section:nth-child(3) {
+        box-sizing: border-box;
+        height: 60px;
+        /* overflow-y: scroll; */
+        overflow: auto;
+        margin: 16px 10px;
+      }
+
+      div:last-of-type {
+        border-bottom: orange 40px solid;
+        border-left: transparent 40px solid;
+        border-right: transparent 40px solid;
+        height: 0px;
+        width: 0px;
+        margin-left: calc(50% - 20px);
+      }
+
+    </style>
+
+  <div>
+    aaaaa
+  </div>
+
+  <div>
+    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit consectetur sapiente maiores ullam ratione, inventore distinctio omnis officiis corporis ab tenetur velit nobis delectus quisquam labore suscipit quasi sint.</section>
+    <section></section>
+    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit consectetur sapiente maiores ullam ratione, inventore distinctio omnis officiis corporis ab tenetur velit nobis delectus quisquam labore suscipit quasi sint.</section>
+  </div>
+
+<br>
+<br>
+<br><br>
+
+  <div></div>
+</body>
+</html>

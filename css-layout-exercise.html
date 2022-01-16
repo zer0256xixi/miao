@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-layout-exercise</title>
+</head>
+<body>
+
+  <style>
+    
+    body {
+      margin: 0px;
+    }
+    
+    div.head {
+      background-color: black;
+      color: white;
+      width: 600px;
+      margin: auto;
+      padding: 0px calc(50% - 300px);
+    }
+
+    p.content {
+      width: 600px;
+      margin: auto;
+      padding: 0px calc(50% - 300px);
+    }
+
+    section {
+      width: 600px;
+      margin-left: auto;
+      padding: 0px calc(50% - 300px);
+    }
+
+    section div {
+      box-sizing: border-box;
+      width: 180px;
+      height: 40px;
+      border: 3px solid;
+      background-color: pink;
+    }
+
+    section div:hover {
+      background-color: red;
+    }
+
+    section div:nth-child(n) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    section div:nth-child(n+5) {
+      margin-left: 210px;
+    }
+
+
+    section div:nth-child(n+9) {
+      margin-left: 420px;
+    }
+
+    section div:nth-child(4n+5) {
+      margin-top: -220px;
+    }
+
+    div.link {
+      min-width: 600px;
+    }
+    div section {
+      width: 600px;
+      margin: auto;
+      padding: 0px;
+      border-top: dotted 1px;
+    }
+
+    .topnone {
+      border-top: none;
+    }
+
+    .last {
+      width: 600px;
+      margin: 0;
+      padding: 0px calc(50% - 300px);
+      text-align: center;
+      background-color: pink;
+    }
+
+  </style>
+
+  <div class="head">
+    hello world 请调整浏览器窗口大小查看效果
+  </div>
+
+  <p class="content">
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+  </p>
+
+  <section>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+    <div>aaa</div>
+  </section>
+
+
+  <div class="link">
+    <section class="topnone">link</section>
+  </div>
+  
+  <div class="link">
+    <section>link</section>
+  </div>
+  
+  <div class="link">
+    <section>link</section>
+  </div>
+  
+  <div class="link">
+    <section>link</section>
+  </div>
+  
+  <div class="link">
+    <section>link</section>
+  </div>
+
+  <p class="last">
+    ©版权所有<br>
+    本页所有布局均使用块元素
+  </p>
+</body>
+</html>
